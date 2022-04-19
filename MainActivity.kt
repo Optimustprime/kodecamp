@@ -6,7 +6,6 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 
-//val diceOne= Dice()
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,33 +16,9 @@ class MainActivity : AppCompatActivity() {
         val diceImage2: ImageButton = findViewById(R.id.imageButton4)
         val diceImage3: ImageButton = findViewById(R.id.imageButton5)
 
-//        {
-//        val roll: Button = findViewById(R.id.button)
-//        val randomText: TextView = findViewById(R.id.random)
-//        val randomPhrases=
-//            arrayOf("hardworking","lazy","somewhat lazy", "very lazy", "very lazy", "dedicated") First Assignment
-//        roll.setOnClickListener {
-//            val varies= Random.nextInt(randomPhrases.size)
-//            randomText.text=randomPhrases.get(varies)
-//
-//        }}
 
-//        val roll: Button = findViewById(R.id.button)
-//        val toast= Toast.makeText(this,"content", Toast.LENGTH_SHORT)
-//        toast.show()
-//        CREATING RANDOM NUMBERS
-//        /////////////
-//        val diceRange=1..6
-//        val randomNumber= diceRange.random()
-//        Log.v("print", randomNumber.toString());
-        /////////////////////
 
-//        when(answer){ this is used to compare answer to luck or anything in the {}, when they are equal it carries out the command
-//            luck-> println("you win")
-//        }
 
-//        Log.v("print", diceOne.sides.toString());
-//        diceOne.roll()
      fun rollDice() {
          val diceOne = Dice(6)
          val diceTwo = Dice(6)
@@ -116,13 +91,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-
-//class Dice {
-//    private val sides=6
-//    fun roll(){
-//        val diceRange=1..sides
-//        val randomNumber= diceRange.random()
-//        Log.v("print", randomNumber.toString())
-//    }
-//
-//}
